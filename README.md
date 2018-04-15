@@ -58,7 +58,7 @@ Download it from https://github.com/hit-moodle/moodle-local_onlinejudge/archives
 
 or using git:
 
-`git clone git://github.com/hit-moodle/moodle-local_onlinejudge.git onlinejudge`
+`git clone https://github.com/kareem2048/moodle-local_onlinejudge onlinejudge`
 
 
 Installation / Upgrading
@@ -116,7 +116,7 @@ Links
 
 Home:
 
-* <https://github.com/hit-moodle/moodle-local_onlinejudge>
+* <https://github.com/kareem2048/moodle-local_onlinejudge>
 
 FAQ:
 
@@ -124,4 +124,4 @@ FAQ:
 
 Bug reports, feature requests, help wanted and other issues:
 
-* <https://github.com/hit-moodle/moodle-local_onlinejudge/issues>
+* <https://github.com/kareem2048/moodle-local_onlinejudge/issues>
