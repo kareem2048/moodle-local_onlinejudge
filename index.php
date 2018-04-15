@@ -47,6 +47,45 @@ $output = $PAGE->get_renderer('local_onlinejudge');
 /// Output starts here
 echo $output->header();
 
+/// User Helper
+echo $output->heading('User Helper', 1);
+echo $output->heading('Basic workflow', 3);
+echo $output->container('
+	<ol>
+		<li>Administrators install and config it.</li>
+		<li>Teachers create Online Judge Assignment Activities and setup testcases etc.</li>
+		<li>Students submit code in Online Judge Assignment Activities.</li>
+		<li>The judge daemon judges the submissions in background.</li>
+		<li>Teachers and students get judge results in Online Judge Assignment Activities.</li>
+	</ol>');
+
+echo $output->heading('Usage', 3);
+echo $output->container('After installation the plugin, there will be a new assignment type called Online Judge appears in the "Add an activity..." drop down list. Simply click it and follow the inline help.');
+
+echo $output->heading('Steps', 3);
+echo $output->heading('For Teachers', 5);
+echo $output->container('To create an assignment simply follow these steps:<br>');
+echo $output->container('
+	<ol>
+		<li>Open the Course page and turn the editing on.</li>
+		<li>Click on "Add an activity or resource".</li>
+		<li>Choose Online Judge assignment then click add.</li>
+		<li>Fill the fields and choose the desired language.</li>
+		<li>Submit the assignment.</li>
+	</ol>');
+
+echo $output->heading('For Students', 5);
+echo $output->container('To submit a code simply follow these steps:<br>');
+echo $output->container('
+	<ol>
+		<li>Open the Course page.</li>
+		<li>Click on the Online Judge assignment that you want to submit.</li>
+		<li>Upload your submission.</li>
+		<li>Wait for the judge.</li>
+	</ol>');
+
+
+/*
 /// Judge status
 if (has_capability('local/onlinejudge:viewjudgestatus', $context)) {
     echo $output->heading(get_string('status'), 1);
@@ -58,6 +97,7 @@ if (has_capability('local/onlinejudge:viewmystat', $context)) {
     echo $output->heading(get_string('mystat', 'local_onlinejudge'), 1);
     echo $output->mystatistics();
 }
+*/
 
 /// About
 echo $output->heading(get_string('about', 'local_onlinejudge'), 1);
